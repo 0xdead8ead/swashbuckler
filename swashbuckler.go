@@ -17,7 +17,7 @@ func handlePacket(packet gopacket.Packet){
 func main() {
 	
 
-	handle, err := pcap.OpenLive("en0", 1600, true, pcap.BlockForever)
+	handle, err := pcap.OpenLive("em1", 1600, true, pcap.BlockForever)
 
 	if err != nil {
 	  panic(err)
